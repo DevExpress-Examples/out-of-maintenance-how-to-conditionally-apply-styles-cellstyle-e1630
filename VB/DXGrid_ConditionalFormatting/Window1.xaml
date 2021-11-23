@@ -9,8 +9,7 @@
         <dxg:GridControl x:Name="grid">
             <dxg:GridControl.Resources>
                 <Style x:Key="customCellStyle"
-                       BasedOn="{StaticResource {dxgt:GridRowThemeKey ResourceKey=CellStyle}}"
-                       TargetType="dxg:CellContentPresenter">
+                       TargetType="dxg:LightweightCellEditor">
                     <Setter Property="Background"
                             Value="{Binding Path=RowData.Row.UnitsOnOrder, Converter={local:IntoToColorConverter}}"/>
                 </Style>
